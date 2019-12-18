@@ -26,7 +26,7 @@ class SinglyLinkedList {
 	}
 
 	pop() {
-		if (!this.head) return undefined;
+		if (this.length === 0) return null;
 		let currentNode = this.head;
 		while (currentNode.next) {
 			if (currentNode.next === this.tail) {
@@ -47,7 +47,7 @@ class SinglyLinkedList {
 	}
 
 	shift() {
-		if (!this.head) return undefined;
+		if (this.length === 0) return null;
 		let deletedNode = this.head;
 		this.head = this.head.next;
 		this.length--;
@@ -68,7 +68,7 @@ class SinglyLinkedList {
 	}
 
 	get(nodeID) {
-		if (nodeID < 0 || nodeID >= this.length) return undefined;
+		if (nodeID < 0 || nodeID >= this.length) return null;
 		let currentNode = this.head;
 		for (let currentID = 0; currentID < this.length; currentID++) {
 			if (currentID === nodeID) return currentNode;
@@ -98,7 +98,7 @@ class SinglyLinkedList {
 	}
 
 	remove(nodeID) {
-		if (nodeID < 0 || nodeID >= this.length) return undefined;
+		if (nodeID < 0 || nodeID >= this.length) return null;
 		if (nodeID === this.length - 1) return this.pop();
 		if (nodeID === 0) return this.shift();
 		let previousNode = this.get(nodeID - 1);
@@ -111,7 +111,7 @@ class SinglyLinkedList {
 	reverse() {
 		let previousNode = null;
 		let currentNode = this.head;
-		let futureNode = undefined;
+		let futureNode = null;
 		this.head = this.tail;
 		this.tail = currentNode;
 		for (let i = 0; i < this.length; i++) {

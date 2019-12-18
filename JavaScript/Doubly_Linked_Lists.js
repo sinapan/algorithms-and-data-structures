@@ -28,7 +28,7 @@ class DoublyLinkedList {
 	}
 
 	pop() {
-		if (this.length === 0) return undefined;
+		if (this.length === 0) return null;
 		let removedNode = this.tail;
 		if (this.length === 1) {
 			this.head = null;
@@ -43,7 +43,7 @@ class DoublyLinkedList {
 	}
 
 	shift() {
-		if (this.length === 0) return undefined;
+		if (this.length === 0) return null;
 		let removedNode = this.head;
 		if (this.length === 1) {
 			this.head = null;
@@ -72,7 +72,7 @@ class DoublyLinkedList {
 	}
 
 	get(nodeID) {
-		if (nodeID < 0 || nodeID >= this.length) return undefined;
+		if (nodeID < 0 || nodeID >= this.length) return null;
 		if (nodeID <= this.length / 2) {
 			let currentNode = this.head;
 			for (let currentID = 0; currentID < this.length; currentID++) {
@@ -112,7 +112,7 @@ class DoublyLinkedList {
 	}
 
 	remove(nodeID) {
-		if (nodeID < 0 || nodeID >= this.length) return undefined;
+		if (nodeID < 0 || nodeID >= this.length) return null;
 		if (nodeID === this.length - 1) return this.pop();
 		if (nodeID === 0) return this.shift();
 		let removedNode = this.get(nodeID);
