@@ -36,20 +36,20 @@ class Queue {
 }
 
 // // TEST
-// let obj = new Stack();
+// let obj = new Queue();
 // console.log('+++++++++++++++');
 // console.log(obj);
 // console.log('---------------');
-// obj.push('node1');
-// obj.push('node2');
-// obj.push('node3');
+// obj.enqueue('node1');
+// obj.enqueue('node2');
+// obj.enqueue('node3');
 // console.log(obj);
 // console.log('---------------');
-// obj.pop();
+// obj.dequeue();
 // console.log(obj);
 // console.log('---------------');
-// obj.pop();
+// obj.dequeue();
 // console.log(obj);
 // console.log('---------------');
-// obj.pop();
+// obj.dequeue();
 // console.log(obj);
