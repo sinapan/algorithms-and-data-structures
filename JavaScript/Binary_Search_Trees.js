@@ -6,7 +6,7 @@ class Node {
 	}
 }
 
-class BinarySearchTree {
+exports.BinarySearchTree = class BinarySearchTree {
 	constructor() {
 		this.root = null;
 	}
@@ -55,7 +55,7 @@ class BinarySearchTree {
 		}
 		return false;
 	}
-}
+};
 
 // // TEST
 // let obj = new BinarySearchTree();

@@ -5,7 +5,7 @@ class Node {
 	}
 }
 
-class Queue {
+exports.Queue = class Queue {
 	constructor() {
 		this.first = null;
 		this.last = null;
@@ -33,7 +33,7 @@ class Queue {
 		this.length--;
 		return removedNode.val;
 	}
-}
+};
 
 // // TEST
 // let obj = new Queue();
