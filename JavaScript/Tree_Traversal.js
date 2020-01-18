@@ -55,23 +55,23 @@ function deapthFirstSearch_InOrder(tree) {
 }
 
 // // ############# TESTS
-let tree = new BST.BinarySearchTree();
-tree.insert(10);
-tree.insert(6);
-tree.insert(15);
-tree.insert(3);
-tree.insert(8);
-tree.insert(14);
-tree.insert(20);
-// console.log(tree);
-// visited = breadthFirstSearch(tree);
-// visited = deapthFirstSearch_PreOrder(tree);
-// visited = deapthFirstSearch_PostOrder(tree);
-visited = deapthFirstSearch_InOrder(tree);
-// console.log(visited);
-let node = visited.first;
-console.log(node.val);
-while (node.next) {
-	node = node.next;
-	console.log(node.val);
-}
+// let tree = new BST.BinarySearchTree();
+// tree.insert(10);
+// tree.insert(6);
+// tree.insert(15);
+// tree.insert(3);
+// tree.insert(8);
+// tree.insert(14);
+// tree.insert(20);
+// // console.log(tree);
+// // visited = breadthFirstSearch(tree);
+// // visited = deapthFirstSearch_PreOrder(tree);
+// // visited = deapthFirstSearch_PostOrder(tree);
+// visited = deapthFirstSearch_InOrder(tree);
+// // console.log(visited);
+// let node = visited.first;
+// console.log(node.val);
+// while (node.next) {
+// 	node = node.next;
+// 	console.log(node.val);
+// }
