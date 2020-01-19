@@ -1,5 +1,4 @@
-// exports.BinaryHeap =
-class BinaryHeap {
+exports.BinaryHeap = class BinaryHeap {
 	constructor() {
 		this.values = [];
 		this.type = 'max'; // 'max' or 'min'
@@ -66,7 +65,7 @@ class BinaryHeap {
 			idMax = id3;
 		return idMax;
 	}
-}
+};
 
 // // TEST
 // let obj = new BinaryHeap();
