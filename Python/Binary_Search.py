@@ -1,4 +1,4 @@
-# Itterative
+# Iterative
 def binarySearch(array, target):
 	if not array: return -1
 	carry = 0
