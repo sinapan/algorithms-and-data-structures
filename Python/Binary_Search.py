@@ -20,7 +20,7 @@ def binarySearch_recursive(array, target, carry=0):
 	if array[mid] == target:
 		return mid+carry
 	elif array[mid] > target:
-		return binarySearch(array[:mid], target, carry)
+		return binarySearch_recursive(array[:mid], target, carry)
 	elif array[mid] < target:
 		carry += mid+1
-		return binarySearch(array[mid+1:], target, carry)
+		return binarySearch_recursive(array[mid+1:], target, carry)
